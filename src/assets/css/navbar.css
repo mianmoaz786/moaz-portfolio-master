@@ -1,0 +1,215 @@
+.navbar {
+  /* background-color:  #36454F; */
+
+
+ 
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23rem;
+  height: 4rem;
+  border-radius: 33px;
+color:white;
+   
+font-weight: 500;;
+  text-align: center;
+ 
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative; /* Ensure it moves back to the navbar */
+}
+
+
+
+
+.burger {
+  position: fixed;
+  right: 29px;
+  top: 23px  ;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ 
+  z-index: 1001;
+}
+
+.burger-line,
+.burger-line-2,
+.burger-line-3 {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.burger-line-2 {
+  opacity: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding-left: 4%;
+  top: 0;
+  left: -100%;
+ 
+  height: 100vh;
+  background-color:rgb(33,33,33);
+  color: white;
+  z-index: 999;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.menu.open {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  height: 100vh;
+  /* width: 22%; */
+  left: 0;
+
+}
+
+.menu > ul {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 0;
+  
+}
+
+#menu-open-btn{
+  border: 2px solid white ;
+  font-weight: 500;
+  color: #FFFFFA;
+  background: transparent;
+  font-size: 18px;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 33px;
+  height: 3.7rem;
+  width: 11rem;
+  transition: all ease 1s;
+  margin: -9px 0 -1px 0;
+}
+#menu-open-btn>img{
+  height: 17px;
+  width: 17px;
+}
+
+#menu-open-btn:hover {
+cursor: none;
+  background-color:rgb(233, 100, 55);
+  border: 3px solid  rgb(233, 100, 55);
+  color: white;
+}
+
+.menu ul li {
+  margin: 20px 0;
+}
+
+.menu ul li a {
+  color: white;
+  cursor: none;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul li a:hover {
+  color: #ffeb3b;
+  cursor: none;
+}
+
+.menu .btn-custom {
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  width: 100%;
+  margin: 10px 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu .btn-custom i {
+  margin-right: 10px;
+}
+
+.menu .btn-custom:hover {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+button > img {
+  width: 23px;
+  height: 23px;
+}
+
+
+
+/* Add overlay blur effect */
+/* navbar.css */
+.blur-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 9;
+  display: none; /* Hidden initially */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  transition: all 0.3s ease; /* Smooth transition for showing/hiding */
+}
+
+.blur-wrapper.show {
+  display: block; /* Show when the menu is open */
+}
+
+.blur-wrapper.full-screen {
+  left: 0; /* Ensure it covers the entire screen */
+  width: 100%;
+}
+
+/* @media screen and(min-width: 768px) {
+  .menu.open{
+    width: 33%;
+  }
+} */
+
+
+
+
+

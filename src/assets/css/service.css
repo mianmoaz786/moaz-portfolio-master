@@ -1,0 +1,103 @@
+/* Services css  */
+/* Services Section Styles */
+.services {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem 0; /* Add padding for better spacing */
+}
+
+.services h2 {
+  color: rgb(233, 107, 58);
+  
+  font-size: 55px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap;  Removed as Bootstrap will handle it */
+  align-items: center;
+}
+
+/* Optional: Add responsiveness for service boxes */
+.service-box {
+  text-align: center; /* Center text within service box */
+}
+
+.service-box {
+  width: 250px;
+  height: 350px;
+  background-color: rgb(16, 19, 20);
+
+  box-shadow: 0 10px 20px rgb(233, 100, 55), 0 5px 10px rgb(233, 100, 55), 0 0 10px rgb(233, 100, 55),
+    0 0 20px rgb(233, 100, 55), 0 0 30px rgb(233, 100, 55);
+  border-radius: 12px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow on hover */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items */
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.service-box:hover {
+  transform: scale(1.1);
+}
+
+.service-icon {
+  font-size: 2rem; /* Icon size */
+  color: rgb(233, 100, 55); /* Adjust color to match theme */
+  transition: all 1s ease;
+}
+.service-icon:hover {
+  transform: translateY(-10px);
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white; /* Consistent color with heading */
+}
+
+.service-box p {
+  padding: 0 6px;
+  /* color: #555; */
+  color: white;
+  font-size: 1rem;
+  width: 15rem !important;
+
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (max-width:428px){
+  .services{
+    height: 270rem;
+  }
+  .services>h2{
+padding-left: 4.3rem;
+  }
+  .parent-service>*{
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .service-box{
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .parent-service>* {
+    margin-left: 1.5rem;
+    
+}
+.services>h2 {
+  padding-left: 2.3rem;
+}
+
+}

@@ -1,0 +1,168 @@
+/* Contact css 
+ */
+
+ #contact-section {
+  /* height: 70rem; */
+  align-items: center;
+
+  margin: 0 auto;
+}
+.contact-form {
+  background: transparent;
+ 
+}
+.contact-form > h1 {
+  font-size: 50px;
+  
+  color: white;
+}
+#form {
+  height: 40rem;
+  /* background-image: url('https://bilalwebdev.com/Images/formBg.webp'); */
+  /* background-color:rgb(5, 7, 8) ; */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form > input,
+form > textarea {
+  background: transparent;
+  border: none; /* Removes all borders initially */
+  border-bottom: 2px solid white; /* Keeps only bottom border */
+  color: white;
+  padding: 10px;
+  outline: none;
+  transition: all ease 1s;
+}
+
+/* Ensure only the bottom border is visible on focus */
+form > input:focus,
+form > textarea:focus {
+  border: none; /* Remove other borders */
+  border-bottom: 2px solid white; /* Keep the bottom border */
+  outline: none; /* Remove outline */
+  box-shadow: none; /* Remove any default focus shadow */
+  background: none;
+}
+
+form > input:hover,
+form > textarea:hover {
+  border-bottom: 2px solid rgb(233, 107, 58); /* Change bottom border color on hover */
+}
+form input::placeholder,
+form > textarea::placeholder {
+  color: white;
+}
+/* Base styling for the button */
+.form-btn {
+  font-family: inherit;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  padding: 0.7em 1em;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  border-radius: 33px;
+  border: 2px solid white;
+  overflow: hidden;
+  transition: all ease 1s;
+}
+
+/* Styling for SVG wrapper */
+.svg-wrapper-1,
+.svg-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Icon transition effect */
+.form-btn svg {
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Span transition effect */
+.form-btn span {
+  margin-left: 0.5em;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for button */
+.form-btn:hover .svg-wrapper {
+  animation: fly 0.6s ease-in-out infinite alternate;
+}
+
+.form-btn:hover svg {
+  transform: translateX(1rem) rotate(45deg) scale(1.1);
+}
+
+.form-btn:hover span {
+  transform: translateX(1rem);
+}
+
+/* Active (click) effect */
+.form-btn:active {
+  transform: scale(0.95);
+}
+.form-btn:hover {
+  border: 2px solid rgb(233, 107, 58);
+}
+/* Keyframe animation for "fly" effect */
+@keyframes fly {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+@media screen and (max-width:428px){
+  .contact-form {
+    margin-top: 6rem;
+    height: 46rem;
+    width: 381px;
+}
+  #contact-section{
+   justify-content: center;
+  align-items: center;
+    flex-direction: column;
+  }
+  .contact-form>h1{
+    font-size: 32px;
+  }
+  .custom-map-container>iframe{
+    height: 25rem;
+}
+
+}
+@media screen and (max-width:390px){
+  .contact-form {
+    margin-top: 5rem;
+    height: 42rem;
+    width: 345px;
+ }
+}
+@media screen and (max-width:375px){
+  .contact-form {
+    margin-top: 5rem;
+    height: 42rem;
+    width: 345px;
+ }
+}
+@media screen and (max-width:360px){
+  .contact-form {
+    margin-top: 5rem;
+    height: 42rem;
+    width: 330px;
+ }
+}
+@media screen and (max-width:320px){
+  .contact-form {
+    margin-top: 5rem;
+    height: 42rem;
+    width: 310px;
+ }
+}

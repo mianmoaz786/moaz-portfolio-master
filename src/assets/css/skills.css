@@ -1,0 +1,168 @@
+h1 {
+  text-align: left;
+  font-size: 55px;
+ 
+  color: rgb(233, 100, 55);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 31rem;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  align-items: center;
+}
+
+.carousel-slide {
+  display: flex;
+  min-width: 100%; 
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Width of each box */
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgb(233, 100, 55), 
+              0 5px 10px rgb(233, 100, 55), 
+              0 0 20px rgb(233, 100, 55),
+              0 0 30px rgb(233, 100, 55), 
+              0 0 50px rgb(233, 100, 55);
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.skill-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-box > span {
+  color: white;
+}
+
+svg {
+  color: white;
+}
+
+button.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(16, 19, 20);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  color: white;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+#experienceImg {
+  width: 500px;
+  height: 600px;
+}
+@media screen and (max-width:834px) {
+  button.carousel-button{
+    display: none;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Adjusting header size for smaller screens */
+  }
+
+  .carousel {
+    height: 25rem; /* Adjust height for smaller screens */
+  }
+  .carousel-slide{
+    min-width: 768px;
+  }
+
+  .skill-box {
+    width: 110px; /* Adjust width of skill boxes */
+    height: 110px; /* Adjust height of skill boxes */
+  }
+
+  .skill-icon {
+    font-size: 50px; /* Adjust icon size */
+  }
+
+  button.carousel-button {
+   
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px; /* Further adjust header size */
+  }
+
+  .carousel {
+    height: 20rem; /* Further adjust height */
+  }
+
+  .skill-box {
+    width: 100px; /* Further adjust box width */
+    height: 100px; /* Further adjust box height */
+  }
+
+  .skill-icon {
+    font-size: 40px; /* Further adjust icon size */
+  }
+
+  button.carousel-button {
+    width: 30px; /* Further adjust button size */
+    height: 30px; /* Further adjust button size */
+    font-size: 18px; /* Further adjust button icon size */
+  }
+}
+@media screen and (max-width:428px) {
+   .skill{
+height: 130rem;
+   }
+.skills-vertical{
+   margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  
+}
+}
+
+@media screen and (max-width: 320px) {
+  .skill{
+    height: 170rem;
+       }
+  .skill-box{
+    height: 150px;
+    width: 150px;
+  }
+}
+

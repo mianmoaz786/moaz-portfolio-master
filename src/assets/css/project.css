@@ -1,0 +1,261 @@
+/* Project css   */
+.project {
+  width: 100%;
+ 
+  padding-top: 15rem;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+
+.card {
+  position: relative;
+  width: 390px;
+  height: 620px;
+  perspective: 1000px;
+  border-radius: 23px;
+  overflow: hidden;
+  background-color: rgb(233, 107, 58);
+
+  /* Enhanced animated border */
+  border-width: 3px; /* Thicker border for visibility */
+  border-style: solid;
+  border-color: white; /* Default white border */
+  /* animation: borderAnimation 10s ease-in-out infinite;  */
+  box-shadow: rgba(233, 108, 58, 0.736) 0px 4px 8px, rgba(233, 108, 58, 0.751) 0px 8px 16px -4px,
+    rgba(233, 108, 58, 0.783) 0px 0px 20px 5px;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-top-color: rgb(16, 19, 20);
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+  }
+  25% {
+    border-top-color: white;
+    border-right-color: rgb(16, 19, 20);
+    border-bottom-color: white;
+    border-left-color: white;
+  }
+  50% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: rgb(16, 19, 20);
+    border-left-color: white;
+  }
+  75% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: black;
+  }
+  100% {
+    border-top-color: rgb(16, 19, 20);
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+  }
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slight scale-up on hover */
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back when not visible */
+  border-radius: 10px;
+  transition: transform  ease 2s ; /* Smooth transition */
+}
+
+.front {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  text-align: center;
+  top: 2.5rem;
+}
+.front > h2 {
+  font-size: 35px ;
+  font-weight: 600;
+  height: 3rem ;
+  width: 20rem ;
+  color: white;
+}
+.front > p {
+  font-size: 20px ;
+  height: 4rem ;
+  width: 23rem ;
+  color: white;
+  padding: 16px 17px;
+  font-weight: 500;
+}
+.front > img {
+  height: 128px;
+  width: auto;
+}
+#shapely-demo {
+  width: 145px;
+  height: 126px;
+}
+
+.back {
+  /* background-color:rgb(14, 18, 19); */
+  background: transparent;
+  transform: rotateY(180deg); /* Rotate back 180 degrees */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg); /* Rotate front when hovered */
+}
+
+.card:hover .back {
+  transform: rotateY(0); /* Show back when front is hidden */
+  background-color: #fff;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  gap: 2rem;
+}
+.button {
+  position: relative;
+  text-align: center;
+  width: 8rem;
+  height: 4rem;
+  font-size: 22px;
+  font-weight: 900;
+  color: rgb(233, 107, 58);
+  border: 2px solid rgb(233, 107, 58);
+  border-radius: 34px;
+
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0px 20px rgb(255, 255, 255);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(233, 107, 58);
+  color: white;
+  border: 2px solid white;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: white;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgb(0, 0, 0);
+  border: 2px solid rgb(250, 126, 24);
+}
+
+.button:active {
+  scale: 1;
+}
+@media screen and (max-width:834px){
+  .project>h1{
+width: 37rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .card{
+  
+ 
+    width: 420px;
+  }
+ .project{
+  height: 157rem;
+ }
+ .project>.container{
+  gap: 7rem;
+ }
+ .card-2{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+ }
+  .project>h1{
+    font-weight: 500;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .card{
+  
+ 
+    width: 420px;
+  }
+ .project{
+  height: 157rem;
+ }
+ .project>.container{
+  gap: 7rem;
+ }
+ .card-2{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+ }
+  .project>h1{
+    font-weight: 500;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card{
+  
+ 
+    width: 420px;
+  }
+ .project{
+  height: 157rem;
+ }
+ .project>.container{
+  gap: 7rem;
+ }
+ .card-2{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+ }
+  .project>h1{
+    font-weight: 500;
+    margin-left: 0;
+  }
+}

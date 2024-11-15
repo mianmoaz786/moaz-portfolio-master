@@ -1,0 +1,115 @@
+.education-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .education-section {
+   
+    height: auto; /* Set height back to original */
+  } 
+  
+ }
+
+#edu-heading{
+  text-align: left;
+
+  font-weight: 600;
+  color: rgb(233, 100, 55);
+  
+}
+/* .educ-content{
+   
+
+  
+} */
+.tab-items {
+  /* width: 809px; */
+ 
+  border-radius: 15px;
+  border: 2px solid rgb(233, 100, 55);
+  padding: 20px;
+  gap: 2rem;
+  background-color: rgb(233, 100, 55);
+  color: white;
+  transition: all 0.5s ease-in-out 0s;
+  position: relative;
+  overflow: hidden; /* Ensures shiny effect stays within boundaries */
+}
+
+.tab-items:hover {
+  transform: scale(1.044);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7), 0 5px 10px rgba(0, 0, 0, 0.3),
+              0 0 20px rgba(233, 100, 55, 0.8), 0 0 40px rgba(233, 100, 55, 0.6),
+              0 0 60px rgba(233, 100, 55, 0.4);
+}
+
+/* Full brightness shine effect moving from left to right */
+.tab-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(248, 187, 91, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg); /* Skew to give a diagonal effect */
+  transition: all 0.3s;
+  animation: shine-left-to-right 2s ease-in-out infinite;
+}
+
+@keyframes shine-left-to-right {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+.circle-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  color: rgb(233, 100, 55);
+  border: 1px solid white;
+}
+
+#educ-date,
+#educ-bachelor,
+#edu-school {
+  font-size: 25px;
+  font-weight: 500;
+  width: 30rem !important;
+}
+
+.education-details {
+  justify-content: center;
+  align-items: center;
+  width: 30rem !important;
+  height: 100% !important;
+}
+
+.edu-image {
+  display: flex;
+  padding-top: 8rem;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.edu-image img {
+  height: auto; /* Let height adjust according to the width */
+  width: 100%; /* Make image responsive */
+  max-width: 500px; /* Limit the max width */
+}
+

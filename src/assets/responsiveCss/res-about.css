@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+  .About-section {
+    flex-direction: column; 
+    gap: 2rem;
+    align-items: center;
+    /* height: 60rem; */
+  }
+
+  .content {
+    width: 100%;
+    max-width: none; /* Reset max-width for mobile */
+  }
+
+  .content > h1 {
+    font-size: 2rem; 
+    padding: 0 4rem;
+  }
+
+  .content > p {
+    font-size: 1rem; /* Smaller font size for mobile */
+    text-indent: 0; 
+    padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 428px){
+  .about-section{
+    flex-direction: column-reverse;
+    height: 60rem;
+  }
+  .content>h1{
+    font-weight: 500;
+  }
+  .content>span{
+    font-weight: 500;
+  }
+}

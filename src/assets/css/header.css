@@ -1,0 +1,159 @@
+.header-content {
+  /* height: 40rem ; */
+  width: 100%;
+  display: flex;
+  position: relative;
+ 
+}
+
+.header-content > .header-left {
+  /* width: 40%; */
+  background-color: rgb(233, 100, 55); /* Consider using a Tailwind class if possible */
+  /* height: 100%; */
+  cursor: none; /* Note: cursor styles can be handled in Tailwind classes */
+}
+
+.header-left:hover {
+  cursor: none; /* Consider removing this if it's not needed */
+}
+
+.social-icons {
+  gap: 2rem; /* Adjust gap for consistency */
+
+}
+.social-icons>a{
+  background-color: rgb(16,19,20);
+}
+.social-icons > a:hover {
+  cursor: none; 
+ 
+}
+
+i {
+  cursor: none; /* Consider whether this is necessary */
+}
+
+
+.header-content > .header-right {
+  padding: 9rem 23rem; /* Consider using responsive padding with media queries */
+  justify-content: center;
+  width: 60%;
+  background-color: rgb(16, 19, 20);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: rgb(194, 194, 194);
+  /* height: 100%; */
+}
+
+.header-content > .header-right > h2,
+.header-content > .header-right > p {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.header-right > .description,
+.desc-text {
+  width: 30rem;
+}
+
+.btns-header {
+  height: 10rem;
+  gap: 1.5rem;
+}
+
+.contact {
+  padding: 12px 43px;
+  color: white;
+  background-color: rgb(233, 100, 55);
+  border: 2px solid rgb(233, 100, 55);
+  font-weight: 500;
+ 
+  border-radius: 33px;
+}
+
+.contact:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.cv {
+  padding: 10px 17px;
+  border: 2px solid rgb(233, 100, 55);
+  transition: all 1s ease;
+  background: transparent;
+  color: rgb(233, 100, 55);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 33px;
+}
+
+.cv:hover {
+  background-color: white;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(233, 100, 55);
+}
+
+.header-right > h1 {
+  font-size: 40px; /* Removed the `!` */
+  font-weight: 900;
+  width: 40rem;
+}
+
+/* Center Section - Profile Photo */
+.profile-photo-container img {
+  width: 110%; /* Zoom out by increasing the width slightly / height: 110%; / Zoom out by increasing the height slightly / object-fit: cover; border-radius: 50%; / Ensure image remains circular / transform: scale(0.9); / Zoom out (90% of original size) and rotate by 10 degrees on X-axis */
+  image-rendering: optimizeQuality;
+}
+.header-center {
+  position: absolute;
+  top: 50%;
+  left: 40% ;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: transparent;
+}
+
+.profile-photo-container {
+  background: transparent;
+  rotate: -1deg;
+  width: 25rem ; /* Adjust the size of the container */
+  height: 25rem ;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+.bar-section {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle {
+  width: 15px; /* Circle size */
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(233, 100, 55);
+}
+
+.bar {
+  width: 81rem;
+  height: 0.7rem;
+  border-radius: 33px;
+  background-color: rgb(233, 100, 55);
+}
+

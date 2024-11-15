@@ -1,0 +1,40 @@
+@media screen and (max-width: 428px) {
+  .menu {
+    width: 80%;
+  }
+  .span{
+    font-size: 30px;
+    margin-bottom: 2.8rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .menu {
+    width: 80%;
+  }
+  .span{
+    font-size: 27px;
+   margin-top:-1.8rem;
+   margin-left: -4rem;
+  }
+}
+@media screen and (max-width:360px) {
+  .menu {
+    width: 80%;
+  }
+  .span{
+    font-size: 27px;
+   margin-top:.6rem;
+   margin-left: -2.4rem;
+  }}
+@media screen and (max-width:320px) {
+  .menu {
+    width: 80%;
+  }
+  .span{
+    font-size: 26px;
+   margin-top:.5rem;
+   margin-left:-2.6rem;
+  }
+}

@@ -1,0 +1,116 @@
+@media screen and (max-width: 834px) {
+  .header-center {
+    left: 22%;
+  }
+  
+  .header-center > .profile-photo-container {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .header-content > .header-right {
+    padding: 10rem 5rem; /* Adjust padding for smaller screens */
+    width: 50%; /* Full width on smaller screens */
+  }
+
+  .header-right > .description,
+  .desc-text {
+    height: 4rem;
+  }
+
+  .header-right > h1 {
+    font-size: 32px; /
+  }
+
+  .header-content > .header-right > h2,
+  .header-content > .header-right > p {
+    font-size: 30px; /* Adjust font sizes for smaller screens */
+  }
+
+  .btns-header {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* .header-content > .header-left {
+    width: 50%; 
+  } */
+
+  .social-icons {
+    flex-direction: row; /* Maintain row direction on smaller screens */
+    gap: 1rem; /* Adjust gap for smaller screens */
+  }
+
+  .social-icons > a {
+    width: 4rem; /* Adjust icon size for mobile */
+    height: 4rem;
+    border-radius: 50%; /* Adjust icon size for mobile */
+  }
+}
+@media screen and (max-width: 428px) {
+  .header-content{
+    flex-direction: column;
+  }
+  .desc-text{
+    text-wrap: wrap;
+    max-width: 320px;
+    height: 8rem;
+  }
+  .header-center{
+    left: 50%;
+    top: 34%;
+  }
+  .header-left{
+  width: 100%;
+  height: 20rem;
+  }
+  .header-right{
+    height: 20rem;
+  }
+  .header-right>h1{
+    font-weight: 500;
+  }
+  .description{
+    font-weight: 500;
+  }
+  .social-icons{
+    display: none;
+  }
+  /* .About-section{
+flex-direction: column;
+  } */
+}
+@media screen and (max-width:393px) {
+  .header-content > .header-right {
+    padding: 10rem 2rem;
+    
+}
+.desc-text {
+  max-width: 300px;
+  text-wrap: wrap;
+  height: 7rem;
+}
+}
+
+@media screen and (max-width:360px) {
+  .header-content > .header-right {
+    padding: 10rem 2rem;
+    
+}
+.desc-text {
+  max-width: 300px;
+  text-wrap: wrap;
+  height: 7rem;
+}
+}
+/* 320px screen resolution
+ */
+
+@media screen and (max-width: 320px) {
+  .header-content > .header-right {
+    padding: 10rem 1rem;
+    
+}
+}

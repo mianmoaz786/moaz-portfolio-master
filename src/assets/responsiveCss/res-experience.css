@@ -1,0 +1,190 @@
+@media screen and (max-width:428px){
+  .education-section{
+    height: 64rem;
+    margin-top: 8rem;
+  }
+  #edu-heading{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 1.4rem;
+  }
+  .tabs{
+    max-width: 428px;
+    gap: 4rem;
+  }
+  .tab-items{
+max-width: 420px;
+border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 20rem;
+margin: 0  1.4rem;
+text-align: center;
+  }
+}
+#educ-bachelor{
+  font-size: 20px;
+  text-wrap:nowrap
+}
+
+
+/* 414px screen resolution  */
+@media screen and (max-width:414px){
+  .education-section{
+    height: 64rem;
+    margin-top: 8rem;
+  }
+  #edu-heading{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 1.4rem;
+  }
+  .tabs{
+    max-width: 414px;
+    gap: 4rem;
+  }
+  .tab-items{
+max-width: 414px;
+border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 20rem;
+margin: 0  1.4rem;
+text-align: center;
+  }
+  #educ-bachelor{
+    font-size: 20px;
+    text-wrap:nowrap
+  }
+  
+}
+
+
+/* 390px screen resolution  */
+@media screen and (max-width:390px){
+  .education-section{
+    height: 64rem;
+    margin-top: 8rem;
+  }
+  #edu-heading{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 1.4rem;
+  }
+  .tabs{
+    max-width: 390px;
+    gap: 4rem;
+  }
+  .tab-items{
+max-width: 390px;
+border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 20rem;
+margin: 0  1.4rem;
+text-align: center;
+  }
+  #educ-bachelor{
+    font-size: 20px;
+    text-wrap:nowrap
+  }
+  
+}
+
+
+/* 375px resolution screen  */
+@media screen and (max-width:375px){
+  .education-section{
+    height: 64rem;
+    margin-top: 8rem;
+  }
+  #edu-heading{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 1.4rem;
+  }
+  .tabs{
+    max-width: 375px;
+    gap: 4rem;
+  }
+  #educ-bachelor{
+    font-size: 20px;
+    text-wrap:nowrap
+  }
+  
+  .tab-items{
+max-width: 375px;
+border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 20rem;
+margin: 0  1.4rem;
+text-align: center;
+  }
+}
+
+/* 360px screen resolution  */
+@media screen and (max-width:360px){
+  .education-section{
+    height: 64rem;
+    margin-top: 8rem;
+  }
+  #edu-heading{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 1.4rem;
+  }
+  .tabs{
+    max-width: 360px;
+    gap: 4rem;
+  }
+  .tab-items{
+max-width: 360px;
+border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 20rem;
+margin: 0  1.4rem;
+text-align: center;
+  }
+}
+
+/* 320 screen resolution  */
+@media screen and (max-width:320px){
+  .education-section{
+    height: 64rem;
+    margin-top: 8rem;
+  }
+  #edu-heading{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 1.4rem;
+  }
+  .tabs{
+    max-width: 320px;
+    gap: 4rem;
+  }
+  .tab-items{
+max-width: 320px;
+border-radius: 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 20rem;
+margin: 0  1.4rem;
+text-align: center;
+  }
+  #educ-bachelor{
+    font-size:18px;
+    text-wrap:nowrap
+  }
+  #edu-school{
+    font-size: 19px;
+  }
+  
+}
